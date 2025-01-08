@@ -1,0 +1,165 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.tashqi{
+    box-sizing: border-box;
+    border: 2px solid #EDEDED;
+    height: 420px;
+    min-width: 500px;
+    border-radius: 12px 12px 100px 12px;
+    padding: 30px;
+}
+
+.kiritish{
+    display: flex;
+    /* background-color: pink; */
+}
+
+.day{
+    /* background-color: green; */
+    height: 70px;
+    width: 100px;
+    margin-right: 20px;
+    border-radius: 7px;
+}
+
+.month{
+    /* background-color: green; */
+    height: 70px;
+    width: 100px;
+    margin-right: 20px;
+    border-radius: 7px;
+}
+
+.year{
+    /* background-color: green; */
+    height: 70px;
+    width: 100px;
+    border-radius: 7px;
+}
+
+body .tashqi .kiritish label{
+    font-size: 10px;
+    color: #676767;
+}
+
+body .tashqi .kiritish input{
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    border: 2px solid #EDEDED;
+}
+
+body .tashqi .kiritish input:focus{
+    color: red;
+    /* border: 1px solid red; */
+}
+
+.xatoP{
+    font-size: 10px;
+    color: red;
+    margin-top: 5px;
+    display: none;
+}
+
+.chiziq{
+    display: flex;
+}
+
+.hr{
+   margin-top: 40px;
+   margin-bottom: 30px;
+   width: 90%;
+   border: 1px solid #EDEDED;
+}
+
+#tugma{
+    background-color: transparent;
+    border: none;
+    border-radius: 100%;
+}
+
+.pastStrelka{
+    background-color: #864CFF;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    margin-top: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.pastStrelka:hover{
+    background-color: black;
+}
+
+.strelka{
+    height: 25px;
+    width: 2px;
+    background-color: white;
+}
+
+.strelka::after{
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 2px;
+    background-color: white;
+    transform: translate(-3px,12px) rotate(-25deg);
+
+}
+
+.strelka::before{
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 2px;
+    background-color: white;
+    transform: translate(3px,11px) rotate(25deg);
+}
+
+.yearValue{
+    /* background-color: pink; */
+    height: 70px;
+    margin-bottom: 5px;
+    font-size: 70px;
+}
+
+.monthValue{
+    /* background-color: pink; */
+    height: 70px;
+    margin-bottom: 5px;
+    font-size: 70px;
+}
+
+.daysValue{
+    /* background-color: pink; */
+    height: 70px;
+    font-size: 70px;
+}
+
+#yearChiziq{
+    color: #864CFF;
+}
+
+#monthChiziq{
+    color: #864CFF;
+}
+
+#dayChiziq{
+    color: #864CFF;
+}

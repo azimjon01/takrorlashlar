@@ -1,0 +1,109 @@
+:root{
+    --primary: #11172c;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background-color: var(--primary);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.input-group{
+    position: relative;
+    width: 22rem;
+    margin: 2rem 0;
+}
+
+.input-group input{
+    width: 100%;
+    padding: 1rem;
+    color: #fff;
+    background-color: var(--primary);
+
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+}
+
+.input-group.type-md input{
+    padding-left: 0;
+    border-bottom: .05rem solid #fff;
+}
+
+.input-group.type-google input{
+    border: .05rem solid #fff;
+    border-radius: .4rem;
+}
+
+.input-group.type-google input:focus{
+    border: .1rem solid cyan;
+}
+
+.input-group label{
+    position: absolute;
+    color: #fff;
+    font-size: 1.1rem;
+    top: 50%;
+    transform: translate(-50%);
+    transition: .2s ease-in-out;
+}
+
+.input-group.type-md label{
+    left: 3rem;
+}
+
+
+.input-group.type-google label{
+    /* left: 4rem; */
+    /* padding: .4rem; */
+    left: 3rem;
+    background-color: var(--primary);
+    top: 1rem;
+}
+
+.input-group.input-group label.salom{
+    left: 4.1rem;
+}
+
+
+.input-group input:focus+label,
+.input-group input:not(:placeholder-shown) + label,
+.input-group input:valid+label{
+    top: 4%;
+    color: cyan;
+    font-size: .8rem;
+
+}
+
+.input-group input:not(:focus)+label{
+    color: #aaa;
+}
+
+.input-group .border{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: .1rem;
+    width: 100%;
+    background-color: cyan;
+
+    transform: scaleX(0);
+    /* transform-origin: left; */
+    transform-origin: right;
+    transition: .3s ease-in-out;
+}
+
+.input-group.type-md input:focus ~ .border{
+    transform: scaleX(1);
+}

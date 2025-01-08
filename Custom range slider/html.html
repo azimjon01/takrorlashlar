@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Animated Range Slider</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="range-slider">
+        <input type="range" min="0" max="200" value="100" class="slider">
+        <div class="slider-thumb">
+            <div class="tooltip">
+                <div class="tooltip-img">
+                    <img src="../../Img/Images/Ro'molli_ayol.jpg" alt="">
+                </div>
+                <p></p>
+            </div>
+        </div>
+        <div class="progress"></div>
+    </div>
+
+    <script>
+        const slider = document.querySelector('.slider');
+        const slider_thumb =document.querySelector('.slider-thumb');
+        const tooltip =document.querySelector('.tooltip');
+        const p =document.querySelector('.tooltip p');
+        const progress = document.querySelector('.progress');
+
+        slider.addEventListener('input',customRangeSlider);
+
+        function customRangeSlider(){
+            const value = (slider.value / slider.max)*100+"%";
+            progress.style.width = value;
+            slider_thumb.style.cssText = `left: ${value};  transform: translate(-${value}, -50%);`
+            p.innerText=Math.round(parseInt(value));
+
+
+            tooltip.classList.add('active');
+
+            ider.onblur=() => {
+                tooltip.classList.remove('active');
+            }
+        }
+
+    </script>
+</body>
+</html>

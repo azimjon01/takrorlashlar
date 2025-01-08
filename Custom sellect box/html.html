@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Sellect box</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="select-box">
+        <div class="selected-option">
+            <input type="text" placeholder="Sellect favorite browser" readonly>
+        </div>
+        <ul class="options">
+            <li class="option">Google Chrome<img src="images/Chrome.jpg" alt=""></li>
+            <li class="option">Safari<img src="images/Safari.jpg" alt=""></li>
+            <li class="option">mozilla firefox<img src="images/Firefox.jpg" alt="" class="mozilla"></li>
+            <li class="option">microsoft Edge<img src="images/Edge.jpg" alt=""></li>
+            <li class="option">opera<img src="images/Opera.jpg" alt=""></li>
+        </ul>
+    </div>
+    <script>
+        const  selected_option=document.querySelector('.selected-option');
+        const options = document.querySelectorAll('.option');
+
+        selected_option.onclick = ()=>{
+            selected_option.classList.toggle('active');
+
+        }
+
+        for (option of options){
+            option.onclick=(e)=>{
+                selected_option.querySelector('input').value=e.target.innerText;
+                selected_option.classList.toggle('active');
+            }
+        }
+    </script>
+</body>
+</html>
