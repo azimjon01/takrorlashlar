@@ -1,0 +1,65 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    margin: 30px auto;
+    width: 400px;
+    height: 400px;
+    background-color: aqua;
+    border: 3px solid black;
+    /* justify-content: space-around;
+    align-content: space-around; */
+}
+
+.description{
+    position: absolute;
+    box-sizing: border-box;
+    width: 180px;
+    height: 380px;
+    margin: 10px;
+    background-color: tomato;
+    padding: 10px;
+    text-align: center;
+}
+
+.description .matn{
+    margin-top: 50%;
+    text-transform: uppercase;
+}
+
+.description .matn h1{
+    font-size: 23px;
+}
+
+.application{
+    position: absolute;
+    display: flex;
+    left: 50%;
+    height: 380px;
+    margin: 10px 10px 10px 0;
+    background-color: blue;
+    /* align-content: space-around; */
+}
+
+.application form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.application form .min{
+    display: flex;
+    gap: 10px;
+    margin: 10px;
+    width: 170px;
+}
+
+.application form .min input{
+    width: 100px;
+}
