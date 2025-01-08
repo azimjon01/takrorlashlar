@@ -1,0 +1,165 @@
+body{
+    font-family: cursive;
+}
+header{
+    background-image: url("Img/Qishda_yol.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 90px 0;
+    text-align: center;
+}
+.visually-hidden{
+    position: absolute !important;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
+.company-name{
+    font-size: 60px;
+}
+.slogan{
+    font-weight: 600;
+}
+nav{
+    width: 80%;
+    border-top: 1px solid rgba(0, 0, 255,0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin: 50px auto;
+}
+.nav-item{
+    display: inline-block;
+}
+.nav-link{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 20px 40px;
+    color: rgba(0, 0, 0, 0.8);
+    transition: background-color 0.6s;
+}
+.nav-link:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.main{
+    text-align: center;
+}
+.recipes-list{
+    margin: 0 auto;
+    width: 80%;
+    text-align: left;
+}
+.recipe-item{
+    width: 30%;
+    margin: 10px 2%;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+.recipe-item:nth-child(1),
+.recipe-item:nth-child(4){
+    margin-left: 0;
+}
+.recipe-item:nth-child(3),
+.recipe-item:nth-child(6){
+    margin-right: 0;
+}
+.recipe-img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.recipe-category{
+    text-decoration: none;
+    color: white;
+    background-color: #f0932b;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-top: 10px;
+    transition: .7s;
+
+}
+.recipe-title-link{
+    text-decoration: none;
+    margin: 15px 0;
+    font-size: 12px;
+    color: black;
+    display: inline-block;
+    text-transform: uppercase;
+}
+.all-recipes{
+    border: 1px solid #ff7979;
+    color: #ff7979;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 40px 0;
+    transition: 1s;
+}
+.all-recipes:hover{
+    background-color: #ff7979;
+    color: white;
+}
+/* Ranglar */
+.bc-orange{
+    background-color:#f0932b;
+}
+.bc-light-blue{
+    background-color: #7ed6df;
+}
+.bc-light-red{
+    background-color:#ff7979;
+}
+.bc-green{
+    background-color: #badc58;
+}
+/* hover */
+.bc-orange:hover{
+    background-color:#f0932b;
+    opacity: 0.5;
+
+}
+.bc-light-blue:hover{
+    background-color: #7ed6df;
+    opacity: 0.5;
+}
+.bc-light-red:hover{
+    background-color:#ff7979;
+    opacity: 0.5;
+}
+.bc-green:hover{
+    background-color: #badc58;
+    opacity: 0.5;
+}
+.form{
+    background-image: url("Img/pirashka.jpg");
+    background-repeat: no-repeat;
+    background-position-y: -50px;
+    background-size: cover;
+    padding: 100px 0;
+    text-align: center;
+}
+.email-input{
+    padding: 10px 20px;
+    margin-right: 20px;
+    width: 400px;
+    border: none;
+}
+.email-submit{
+    background-color: #ff4747;
+    color: white;
+    padding: 10px 40px;
+    border: none;
+    font-weight: bold;
+}
+.subscribe-text{
+    color: white;
+    margin-top: 40px;
+}

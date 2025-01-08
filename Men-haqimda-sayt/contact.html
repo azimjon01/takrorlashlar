@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="shared.css">
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Roboto -->
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> -->
+  <!-- /Roboto -->
+  <title>Portfolio-Bog'lanish</title>
+</head>
+
+<body>
+  <!-- Header section -->
+  <div class="container">
+    <header class="main-header">
+      <div class="main-header-brand">
+        <a href="men_haqimda.html">
+          <img src="Men_haqimda_rasmlar/A harfi.ico" alt="Sayt logosi">
+        </a>
+      </div>
+      <nav class="main-navigation">
+        <ul class="main-navigation-items">
+          <li class="main-navigation-item">
+            <a href="men_haqimda.html">Asosiy</a>
+          </li>
+          <li class="main-navigation-item">
+            <a href="#">Men haqimda</a>
+          </li>
+          <li class="main-navigation-item">
+            <a href="#">Xizmatlar</a>
+          </li>
+          <li class="main-navigation-item">
+            <a href="#">Mijozlar</a>
+          </li>
+          <li class="main-navigation-item">
+            <a href="#">Portfolio</a>
+          </li>
+          <li class="main-navigation-item">
+            <a href="#">Blog</a>
+          </li>
+          <li class="main-navigation-item">
+            <a href="#">Sheriklar</a>
+          </li>
+          <li class="main-navigation-item active">
+            <a href="contact.html" >Bog'lanish</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+  <!-- /Header section -->
+
+<div class="container">
+    <section class="contact">
+        <div class="section-title">
+            Men bilan bog'laning
+        </div>
+        <form action="/server.php" method="GET">
+            <textarea name="" id="" rows="20" placeholder="Xabaringizni kiriting" name="message"></textarea>
+            <div class="half-flex">
+              <div class="contact__firstname">
+                  <input type="text" placeholder="Ismingizni kiriting" name="firstname">
+              </div>
+              <div class="contact__email">
+                  <input type="email" placeholder="Emailingizni kiriting" name="email">
+              </div>
+            </div>
+            <input type="text" placeholder="Xat mazmuni" name="subject">
+            <button type="submit" class="button contact__send">Xabar jo'natish</button>
+        </form>
+    </section>
+</div>
+
+  <!-- Footer section -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__brand">
+        <img src="Men_haqimda_rasmlar/breedlogo.png" alt="Logo">
+      </div>
+      <nav class="footer__navigation">
+        <ul class="footer__navigation-items">
+          <li class="footer__navigation-item">
+            <a href="#">Asosiy</a>
+          </li>
+          <li class="footer__navigation-item">
+            <a href="#">Men haqimda</a>
+          </li>
+          <li class="footer__navigation-item">
+            <a href="#">Xizmatlar</a>
+          </li>
+          <li class="footer__navigation-item">
+            <a href="#">Mijozlar</a>
+          </li>
+          <li class="footer__navigation-item">
+            <a href="#">Portfolio</a>
+          </li>
+          <li class="footer__navigation-item">
+            <a href="#">Blog</a>
+          </li>
+          <li class="footer__navigation-item">
+            <a href="#">Sheriklar</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="footer__socials">
+        <li class="footer__social">
+          <a href="#">
+            <i class="fab fa-telegram"></i>
+          </a>
+        </li>
+        <li class="footer__social">
+          <a href="#">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+        <li class="footer__social">
+          <a href="#">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </li>
+      </ul>
+      <p class="footer__text">Copyright ©2024 All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a style="text-decoration: none;" href="#">Colorlib</a></p>
+    </div>
+  </footer>
+  <!-- /Footer section -->
+</body>
+
+</html>
