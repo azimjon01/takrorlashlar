@@ -1,0 +1,185 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    background: red;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container--title{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    color: greenyellow;
+}
+
+.container__main{
+    background: green;
+    margin: 0 auto;
+    width: 99vw;
+    height: 92vh;
+    display: flex;
+    /* gap: 1px; */
+}
+
+/* INPUT SECTIONS */
+
+.container__main--input{
+    background: salmon;
+    margin: 10px;
+    width: 30vw;
+    padding: 10px;
+}
+
+.container__main--input{
+    display: grid;
+    align-items: center;
+    /* column-gap: 10px; */
+}
+
+/* title section */
+
+.title__section{
+    background: khaki;
+    text-align: center;
+    height: 7vh;
+}
+
+/* input section */
+
+.input__section{
+    background: aqua;
+    height: 66vh;
+    display: grid;
+    align-items:center;
+    padding: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.input__section--line{
+    display: flex;
+    justify-content: space-between;
+}
+
+.input__section--line input{
+    font-size: 20px;
+
+}
+
+.input__section--line label{
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+
+
+/* control section */
+
+.control__section{
+    background: seagreen;
+    height: 7vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.control__section--btn{
+    font-size: 20px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+/* OUTPUT SECTIONS */
+
+.container__main--output{
+    background: salmon;
+    margin: 10px;
+    width: 70vw;
+    padding: 10px;
+    display: grid;
+    /* justify-content: space-around; */
+    align-items: center;
+
+}
+
+.main--output-search{
+    height: 10vh;
+    background: lawngreen;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+/* Select input */
+
+#tanlash{
+    font-size: 20px;
+    padding: 10px;
+}
+
+.output__select input,label{
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.output__search button,input{
+    font-size: 20px;
+    margin-right: 10px;
+    padding: 8px;
+}
+
+.output__search button{
+    cursor: pointer;
+}
+
+/* Output display */
+
+.output__display{
+    background: darkorange;
+    height: 73vh;
+    /* padding: 0px; */
+    border: 5px solid #fb8b0b;
+    overflow-y: auto;
+}
+
+/* table */
+
+.output__display table{
+    background: #fff;
+    height: 70vh;
+    max-width: 64vw;
+    min-width: 63vw;
+    /* min-width: 64vw; */
+    /* border-collapse: collapse; */
+    text-align: center;
+}
+
+.output__display table thead tr th,td{
+    border: 1px solid black;
+    /* padding: 5px; */
+}
+
+.output__display table thead{
+    position: sticky;
+    top: 0;
+    margin-top: 0;
+    z-index: 1;
+    background-color: chartreuse;
+}
+
+#list__container{
+    cursor: pointer;
+    /* max-width: ; */
+    /* overflow-y: auto; */
+}
+
+#list__container tr{
+    height: 26.1px;
+}

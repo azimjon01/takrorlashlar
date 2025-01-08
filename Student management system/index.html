@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talabalar ro'yxati</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="container--title">Talabalarni nazorat qilish ro'yxati</h1>
+        <div class="container__main">
+            <div class="container__main--input">
+                <h1 class="title__section">Talabalar nazorati</h1>
+                <div class="input__section">
+                    <div class="input__section--line">
+                        <label for="id">Id</label>
+                        <input type="number" id="id">
+                    </div>
+                    <div class="input__section--line">
+                        <label for="ism">Ism</label>
+                        <input type="text" id="ism">
+                    </div>
+                    <div class="input__section--line">
+                        <label for="familiya">Familiya</label>
+                        <input type="text" id="familiya">
+                    </div>
+                    <div class="input__section--line">
+                        <label for="yosh">Yosh</label>
+                        <input type="number" id="yosh">
+                    </div>
+                    <div class="input__section--line">
+                        <label for="jins">Jins</label>
+                        <input type="text" id="jins">
+                    </div>
+                    <div class="input__section--line">
+                        <label for="email">Email</label>
+                        <input type="email" id="email">
+                    </div>
+                    <div class="input__section--line">
+                        <label for="telefon">Telefon</label>
+                        <input type="text" id="telefon">
+                    </div>
+                    <div class="input__section--line">
+                        <label for="manzil">Manzil</label>
+                        <input type="text" id="manzil">
+                    </div>
+                </div>
+                <div class="control__section">
+                    <button class="control__section--btn" id="addBtn">Add</button>
+                    <button class="control__section--btn" id="updateBtn">Update</button>
+                    <button class="control__section--btn" id="deleteBtn">Delete</button>
+                    <button class="control__section--btn" id="clearBtn">Clear</button>
+                </div>
+            </div>
+            <div class="container__main--output">
+                <div class="main--output-search">
+                    <div class="output__select">
+                        <label for="tanlash">Tanlash</label>
+                        <select id="tanlash">
+                            <option value="all">Hammasi</option>
+                            <option value="erkak">Erkak</option>
+                            <option value="ayol">Ayol</option>
+                        </select>
+                    </div>
+                    <div class="output__search">
+                        <input type="search" id="search">
+                        <button class="output__search--btn" id="searchBtn">Qidirish</button>
+                        <button class="output__search--btn" id="allBtn">Hammasi</button>
+                    </div>
+                </div>
+                <div class="output__display">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Ism</th>
+                                <th>Familiya</th>
+                                <th>Yosh</th>
+                                <th>Jins</th>
+                                <th>Email</th>
+                                <th>Telefon</th>
+                                <th>Manzil</th>
+                            </tr>
+                        </thead>
+                        <tbody id="list__container">
+                            <!-- <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr> -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../../../react/todo"
+		},
+		{
+			"path": "../../js"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {}
+}
